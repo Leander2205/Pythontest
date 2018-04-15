@@ -31,8 +31,12 @@ class Tier:
 
     def printRasse(self):
         print ("(Tier) Rasse:", self.rasse)
+
 class Hund (Tier):
     tatzen = 0
 
     def __init__ (self,tatzen,rasse,geschlecht,alter):
         super(Hund,self).__init__(rasse,geschlecht,alter)
+        self.tatzen=tatzen
+h1= Hund(10,"Dackel","Männlich",5)
+h1.printRasse()
