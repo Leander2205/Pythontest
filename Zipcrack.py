@@ -11,7 +11,7 @@ def crack (zip, pwd):
     except:
         pass
 
-zipFile= zipfile.ZipFile("")
+zipFile= zipfile.ZipFile("C:\\Users\\Sumeronix\\Documents\\loesungen.zip")
 myLetters= string.ascii_letters + string.digits + string.punctuation
 for i in range (3,10):
     for j in map ("".join, itertools.product(myLetters, repeat=i)):
